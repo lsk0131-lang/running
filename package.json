@@ -1,0 +1,20 @@
+{
+  "name": "running-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed": "node scripts/seed.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.105.0",
+    "better-sqlite3": "^11.8.1",
+    "date-fns": "^4.1.0",
+    "next": "15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.0"
+  }
+}
