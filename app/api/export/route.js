@@ -29,7 +29,7 @@ function esc(v) {
 
 // 러닝 기록을 엑셀에서 열 수 있는 CSV로 내려줍니다 (GET).
 export async function GET() {
-  const runs = getWorkouts({ limit: 100000 })
+  const runs = (await getWorkouts({ limit: 100000 }))
     .slice()
     .sort((a, b) => a.start_at.localeCompare(b.start_at)); // 오래된 순
 

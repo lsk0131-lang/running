@@ -145,8 +145,8 @@ export async function POST(req) {
     );
   }
 
-  const saved = hasWorkouts ? saveWorkouts(workouts) : 0;
-  const bm = hasMetrics ? saveMetrics(metrics) : { weights: 0, fat: 0 };
+  const saved = hasWorkouts ? await saveWorkouts(workouts) : 0;
+  const bm = hasMetrics ? await saveMetrics(metrics) : { weights: 0, fat: 0 };
 
   return NextResponse.json({
     ok: true,

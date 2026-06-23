@@ -32,5 +32,5 @@ for (let i = 0; i < 26; i++) {
   });
 }
 
-const saved = saveWorkouts(workouts);
+const saved = await saveWorkouts(workouts);
 console.log(`샘플 ${workouts.length}건 중 ${saved}건 저장 완료.`);
